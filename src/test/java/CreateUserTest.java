@@ -19,9 +19,7 @@ public class CreateUserTest {
     private UserClient userClient;
     private User user;
     private String accessToken;
-    private String bearerToken;
 
-    private int statusCode;
 
     @Before
     public void setUp() {
@@ -33,10 +31,7 @@ public class CreateUserTest {
         if(accessToken != null){
             userClient.deleteUser(accessToken);
         }
-
-
-//        ValidatableResponse deleteResponse = userClient.deleteUser(accessToken);
-//        assertEquals(SC_ACCEPTED, deleteResponse.extract().statusCode());
+        
     }
 
     @Test

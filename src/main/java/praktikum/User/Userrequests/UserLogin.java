@@ -9,6 +9,13 @@ public class UserLogin {
         this.password = password;
     }
 
+    public UserLogin() {
+    }
+
+    public static UserLogin creds(User user) {
+        return new UserLogin (user.getEmail(), user.getPassword());
+    }
+
     public String getEmail() {
         return email;
     }
