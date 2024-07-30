@@ -31,7 +31,6 @@ public class CreateUserTest {
         if(accessToken != null){
             userClient.deleteUser(accessToken);
         }
-
     }
 
     @Test
@@ -50,6 +49,7 @@ public class CreateUserTest {
     accessToken = responseToCreateUser.extract().path("accessToken");
 
     }
+
 
     @Test
     @DisplayName("Повторное создание уже зарегистрированного пользователя")
@@ -76,7 +76,6 @@ public class CreateUserTest {
 
     }
 
-
     @Test
     @DisplayName("Создание пользователя без поля email")
     @Description("POST-запрос на ручку /api/auth/register")
@@ -94,7 +93,6 @@ public class CreateUserTest {
         assertEquals("The message is wrong", messageExpected, messageActual);
 
     }
-
 
     @Test
     @DisplayName("Создание пользователя без поля password")
@@ -114,7 +112,6 @@ public class CreateUserTest {
 
     }
 
-
     @Test
     @DisplayName("Создание пользователя без поля name")
     @Description("POST-запрос на ручку /api/auth/register")
@@ -132,6 +129,5 @@ public class CreateUserTest {
         assertEquals("The message is wrong", messageExpected, messageActual);
 
     }
-
 
 }

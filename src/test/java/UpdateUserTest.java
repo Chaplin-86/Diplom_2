@@ -20,7 +20,6 @@ public class UpdateUserTest {
     private UserClient userClient;
     private UserLogin userLogin;
     private String accessToken;
-    private String refreshToken;
 
     @Before
     public void setUp() {
@@ -59,7 +58,6 @@ public class UpdateUserTest {
         assertEquals("Status code is wrong", SC_OK, updateUserEmailResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserEmailResponse.extract().path("success");
         assertTrue(isUpdateSuccessful);
-
     }
 
     @Test
@@ -85,7 +83,6 @@ public class UpdateUserTest {
         assertEquals("Status code is wrong", SC_OK, updateUserPasswordResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserPasswordResponse.extract().path("success");
         assertTrue(isUpdateSuccessful);
-
     }
 
     @Test
@@ -111,7 +108,6 @@ public class UpdateUserTest {
         assertEquals("Status code is wrong", SC_OK, updateUserNameResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserNameResponse.extract().path("success");
         assertTrue(isUpdateSuccessful);
-
     }
 
     @Test
@@ -135,7 +131,6 @@ public class UpdateUserTest {
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, updateNotAuthUserEmailResponse.extract().statusCode());
         Boolean isUpdateNotSuccessful = updateNotAuthUserEmailResponse.extract().path("success");
         assertFalse(isUpdateNotSuccessful);
-
     }
 
     @Test
@@ -159,7 +154,6 @@ public class UpdateUserTest {
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, updateNotAuthUserPasswordResponse.extract().statusCode());
         Boolean isUpdateNotSuccessful = updateNotAuthUserPasswordResponse.extract().path("success");
         assertFalse(isUpdateNotSuccessful);
-
     }
 
     @Test
@@ -185,8 +179,6 @@ public class UpdateUserTest {
         assertFalse(isUpdateNotSuccessful);
 
     }
-
-
 
 
 }

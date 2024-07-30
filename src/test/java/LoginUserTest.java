@@ -35,7 +35,6 @@ public class LoginUserTest {
         if (accessToken != null) {
             userClient.deleteUser(accessToken);
         }
-
     }
 
     @Test
@@ -59,7 +58,6 @@ public class LoginUserTest {
         assertThat(refreshToken, notNullValue());
         assertThat(responseToLogin.extract().path("user"), notNullValue());
 
-
     }
 
     @Test
@@ -79,7 +77,6 @@ public class LoginUserTest {
         String messageExpected = "email or password are incorrect";
         String messageActual = responseToLogin.extract().path("message");
         assertEquals("The message is wrong", messageExpected, messageActual);
-
 
     }
 
@@ -103,6 +100,5 @@ public class LoginUserTest {
 
 
     }
-
 
 }

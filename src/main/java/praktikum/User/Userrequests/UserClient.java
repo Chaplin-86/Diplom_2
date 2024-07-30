@@ -23,6 +23,7 @@ public ValidatableResponse createUser(User user) {
             .then().log().all();
 }
 
+
 @Step("Авторизация пользователя")
 public ValidatableResponse loginUser(UserLogin login) {
     return given()
@@ -33,6 +34,7 @@ public ValidatableResponse loginUser(UserLogin login) {
             .post(LOGIN_ENDPOINT)
             .then().log().all();
 }
+
 @Step("Изменение данных пользователя")
 public ValidatableResponse updateUser(User user, String accessToken) {
     return given()
@@ -44,6 +46,7 @@ public ValidatableResponse updateUser(User user, String accessToken) {
             .patch(USER_ENDPOINT)
             .then().log().all();
     }
+
 @Step("Удаление пользователя")
 public ValidatableResponse deleteUser(String accessToken) {
     return given()
@@ -53,4 +56,5 @@ public ValidatableResponse deleteUser(String accessToken) {
             .delete(USER_ENDPOINT)
             .then().log().all();
     }
+
 }
