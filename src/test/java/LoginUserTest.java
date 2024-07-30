@@ -44,6 +44,7 @@ public class LoginUserTest {
     public void realUserLogin() {
         user = randomUser();
         userClient = new UserClient();
+        userLogin = new UserLogin();
 
         userClient.createUser(user);
 

@@ -31,7 +31,7 @@ public class CreateUserTest {
         if(accessToken != null){
             userClient.deleteUser(accessToken);
         }
-        
+
     }
 
     @Test
@@ -55,7 +55,7 @@ public class CreateUserTest {
     @DisplayName("Повторное создание уже зарегистрированного пользователя")
     @Description("POST-запрос на ручку /api/auth/register")
     public void createNotUniqueUser() {
-        user = new User("Harry_P@yandex.ru", "password", "Harry");
+        user = new User("Harry_P2@yandex.ru", "password", "Harry");
         userClient = new UserClient();
 
         ValidatableResponse response = userClient.createUser(user);
@@ -69,7 +69,7 @@ public class CreateUserTest {
 
         assertEquals("Status code id wrong", SC_FORBIDDEN, response1.extract().statusCode());
         Boolean isUserNotCreated = response1.extract().path("success");
-        assertFalse(isUserNotCreated);
+         assertFalse(isUserNotCreated);
         String messageExpected = "User already exists";
         String messageActual = response1.extract().path("message");
         assertEquals("The message is wrong", messageExpected, messageActual);

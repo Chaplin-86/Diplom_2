@@ -1,6 +1,7 @@
 package praktikum.User.Userrequests;
 
 import io.qameta.allure.Step;
+import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import static io.restassured.RestAssured.given;
 
@@ -14,7 +15,7 @@ public class UserClient {
 public ValidatableResponse createUser(User user) {
 
     return given()
-            .header("Content-type", "application/json")
+            .contentType(ContentType.JSON)
             .and()
             .body(user)
             .when()
@@ -25,7 +26,7 @@ public ValidatableResponse createUser(User user) {
 @Step("Авторизация пользователя")
 public ValidatableResponse loginUser(UserLogin login) {
     return given()
-            .header("Content-type", "application/json")
+            .contentType(ContentType.JSON)
             .and()
             .body(login)
             .when()
@@ -33,10 +34,10 @@ public ValidatableResponse loginUser(UserLogin login) {
             .then().log().all();
 }
 @Step("Изменение данных пользователя")
-public ValidatableResponse updateUser(User user, String token) {
+public ValidatableResponse updateUser(User user, String accessToken) {
     return given()
-            .auth().oauth2(token)
-            .header("ContentType", "application/json")
+            .auth().oauth2(accessToken)
+            .contentType(ContentType.JSON)
             .and()
             .body(user)
             .when()
@@ -46,7 +47,8 @@ public ValidatableResponse updateUser(User user, String token) {
 @Step("Удаление пользователя")
 public ValidatableResponse deleteUser(String accessToken) {
     return given()
-            .auth().oauth2(accessToken)
+            .auth().oauth2(accessToken.substring(accessToken.indexOf(" ") + 1))
+            .contentType(ContentType.JSON)
             .when()
             .delete(USER_ENDPOINT)
             .then().log().all();
