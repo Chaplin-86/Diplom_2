@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: OrderTests.CreateOrderTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 17.402 s <<< FAILURE! - in OrderTests.CreateOrderTests
+CreateAuthOrderWitInvalidIngredientsHashTest(OrderTests.CreateOrderTests)  Time elapsed: 10.303 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <500>
+     but: was <403>
+	at OrderTests.CreateOrderTests.CreateAuthOrderWitInvalidIngredientsHashTest(CreateOrderTests.java:162)
+
+CreateAuthOrderWithIngredientsTest(OrderTests.CreateOrderTests)  Time elapsed: 1.299 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <403>
+	at OrderTests.CreateOrderTests.CreateAuthOrderWithIngredientsTest(CreateOrderTests.java:79)
+
+CreateAuthOrderWithoutIngredientsTest(OrderTests.CreateOrderTests)  Time elapsed: 1.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <400>
+     but: was <403>
+	at OrderTests.CreateOrderTests.CreateAuthOrderWithoutIngredientsTest(CreateOrderTests.java:120)
+
