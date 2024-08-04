@@ -1,3 +1,5 @@
+package UserTests;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
@@ -14,7 +16,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.*;
 import static praktikum.UserGenerator.randomUser;
 
-public class CreateUserTest {
+public class CreateUserTests {
     private static final String BASE_URL = "https://stellarburgers.nomoreparties.site";
     private UserClient userClient;
     private User user;
