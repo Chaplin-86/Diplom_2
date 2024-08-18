@@ -55,7 +55,7 @@ public class UpdateUserTests {
         String newEmail = "Sirius_Black@yandex.ru";
         createdUser.setEmail(newEmail);
 
-        ValidatableResponse updateUserEmailResponse = userClient.updateUser(createdUser, accessToken);
+        ValidatableResponse updateUserEmailResponse = userClient.updateUser(createdUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_OK, updateUserEmailResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserEmailResponse.extract().path("success");
@@ -80,7 +80,7 @@ public class UpdateUserTests {
         String newPassword = "egjtfiohvl";
         createdUser.setPassword(newPassword);
 
-        ValidatableResponse updateUserPasswordResponse = userClient.updateUser(createdUser, accessToken);
+        ValidatableResponse updateUserPasswordResponse = userClient.updateUser(createdUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_OK, updateUserPasswordResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserPasswordResponse.extract().path("success");
@@ -105,7 +105,7 @@ public class UpdateUserTests {
         String newName = "Sirius";
         createdUser.setEmail(newName);
 
-        ValidatableResponse updateUserNameResponse = userClient.updateUser(createdUser, accessToken);
+        ValidatableResponse updateUserNameResponse = userClient.updateUser(createdUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_OK, updateUserNameResponse.extract().statusCode());
         Boolean isUpdateSuccessful = updateUserNameResponse.extract().path("success");
@@ -128,7 +128,7 @@ public class UpdateUserTests {
         String newEmail = "Sirius_Black@yandex.ru";
         notAuthUser.setEmail(newEmail);
 
-        ValidatableResponse updateNotAuthUserEmailResponse = userClient.updateUser(notAuthUser, accessToken);
+        ValidatableResponse updateNotAuthUserEmailResponse = userClient.updateUser(notAuthUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, updateNotAuthUserEmailResponse.extract().statusCode());
         Boolean isUpdateNotSuccessful = updateNotAuthUserEmailResponse.extract().path("success");
@@ -151,7 +151,7 @@ public class UpdateUserTests {
         String newPassword = "password";
         notAuthUser.setPassword(newPassword);
 
-        ValidatableResponse updateNotAuthUserPasswordResponse = userClient.updateUser(notAuthUser, accessToken);
+        ValidatableResponse updateNotAuthUserPasswordResponse = userClient.updateUser(notAuthUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, updateNotAuthUserPasswordResponse.extract().statusCode());
         Boolean isUpdateNotSuccessful = updateNotAuthUserPasswordResponse.extract().path("success");
@@ -174,7 +174,7 @@ public class UpdateUserTests {
         String newName = "Sirius";
         notAuthUser.setName(newName);
 
-        ValidatableResponse updateNotAuthUserNameResponse = userClient.updateUser(notAuthUser, accessToken);
+        ValidatableResponse updateNotAuthUserNameResponse = userClient.updateUser(notAuthUser, accessToken.replace("Bearer ", ""));
 
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, updateNotAuthUserNameResponse.extract().statusCode());
         Boolean isUpdateNotSuccessful = updateNotAuthUserNameResponse.extract().path("success");

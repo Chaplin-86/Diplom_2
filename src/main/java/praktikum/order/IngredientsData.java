@@ -1,4 +1,4 @@
-package praktikum.Order;
+package praktikum.order;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,8 +23,8 @@ public class IngredientsData {
     private String __v;
 
     public IngredientsData(String _id, String name, String type, String proteins, String fat,
-                       String carbohydrates, String calories, String price, String image,
-                       String image_mobile, String image_large, String __v) {
+                           String carbohydrates, String calories, String price, String image,
+                           String image_mobile, String image_large, String __v) {
         this._id = _id;
         this.name = name;
         this.type = type;

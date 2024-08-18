@@ -7,7 +7,7 @@ import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import praktikum.Order.OrderClient;
+import praktikum.order.OrderClient;
 import praktikum.User.Userrequests.User;
 import praktikum.User.Userrequests.UserClient;
 
@@ -52,7 +52,7 @@ public class GetOrderTests {
     public void GetAuthUserOrdersTest() {
         orderClient = new OrderClient();
 
-        ValidatableResponse response = orderClient.getAuthOrder(accessToken);
+        ValidatableResponse response = orderClient.getAuthOrder(accessToken.replace("Bearer ", ""));
         statusCode = response.extract().statusCode();
         assertThat(statusCode, equalTo(SC_OK));
         assertThat(response.extract().path("success"), equalTo(true));

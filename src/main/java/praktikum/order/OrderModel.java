@@ -1,4 +1,4 @@
-package praktikum.Order;
+package praktikum.order;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,6 +11,7 @@ import java.util.List;
 @Builder
 
 public class OrderModel {
+
     private List<String> ingredients;
     private List<Ingredients> data;
 

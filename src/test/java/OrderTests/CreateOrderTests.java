@@ -7,7 +7,7 @@ import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import praktikum.Order.*;
+import praktikum.order.*;
 import praktikum.User.Userrequests.User;
 import praktikum.User.Userrequests.UserClient;
 
@@ -72,7 +72,7 @@ public class CreateOrderTests {
         ingredientId.add(ingredients.getData().get(1).get_id());
 
 
-        ValidatableResponse responseToCreateOrder = orderClient.createAuthOrder(order, accessToken);
+        ValidatableResponse responseToCreateOrder = orderClient.createAuthOrder(order, accessToken.replace("Bearer ", ""));
         statusCode = responseToCreateOrder
                 .extract()
                 .statusCode();
