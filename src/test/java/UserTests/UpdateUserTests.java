@@ -119,8 +119,7 @@ public class UpdateUserTests {
         user = randomUser();
         userClient = new UserClient();
 
-        ValidatableResponse createUserResponse = userClient.createUser(user);
-        accessToken = createUserResponse.extract().path("accessToken");
+        accessToken = " ";
 
         User notAuthUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
@@ -142,8 +141,7 @@ public class UpdateUserTests {
         user = randomUser();
         userClient = new UserClient();
 
-        ValidatableResponse createUserResponse = userClient.createUser(user);
-        accessToken = createUserResponse.extract().path("accessToken");
+        accessToken = " ";
 
         User notAuthUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
@@ -165,8 +163,7 @@ public class UpdateUserTests {
         user = randomUser();
         userClient = new UserClient();
 
-        ValidatableResponse createUserResponse = userClient.createUser(user);
-        accessToken = createUserResponse.extract().path("accessToken");
+        accessToken = " ";
 
         User notAuthUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
