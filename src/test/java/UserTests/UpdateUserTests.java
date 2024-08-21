@@ -48,7 +48,7 @@ public class UpdateUserTests {
 
         User createdUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
-        ValidatableResponse loginResponse = userClient.loginUser(userLogin.creds(createdUser));
+        ValidatableResponse loginResponse = userClient.loginUser(UserLogin.creds(createdUser));
         accessToken = loginResponse.extract().path("accessToken");
 
 
@@ -74,7 +74,7 @@ public class UpdateUserTests {
 
         User createdUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
-        ValidatableResponse loginResponse = userClient.loginUser(userLogin.creds(createdUser));
+        ValidatableResponse loginResponse = userClient.loginUser(UserLogin.creds(createdUser));
         accessToken = loginResponse.extract().path("accessToken");
 
         String newPassword = "egjtfiohvl";
@@ -99,7 +99,7 @@ public class UpdateUserTests {
 
         User createdUser = new User(user.getEmail(), user.getPassword(),user.getName());
 
-        ValidatableResponse loginResponse = userClient.loginUser(userLogin.creds(createdUser));
+        ValidatableResponse loginResponse = userClient.loginUser(UserLogin.creds(createdUser));
         accessToken = loginResponse.extract().path("accessToken");
 
         String newName = "Sirius";

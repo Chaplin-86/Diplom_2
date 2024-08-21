@@ -49,7 +49,7 @@ public class LoginUserTests {
 
         userClient.createUser(user);
 
-        ValidatableResponse responseToLogin = userClient.loginUser(userLogin.creds(user));
+        ValidatableResponse responseToLogin = userClient.loginUser(UserLogin.creds(user));
 
         assertEquals("Status code is wrong", SC_OK, responseToLogin.extract().statusCode());
         Boolean isLoginSuccessful = responseToLogin.extract().path("success");
@@ -71,7 +71,7 @@ public class LoginUserTests {
 
         user.setEmail("harry@yandex.ru");
 
-        ValidatableResponse responseToLogin = userClient.loginUser(userLogin.creds(user));
+        ValidatableResponse responseToLogin = userClient.loginUser(UserLogin.creds(user));
 
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, responseToLogin.extract().statusCode());
         Boolean isLoginNotSuccessful = responseToLogin.extract().path("success");
@@ -91,7 +91,7 @@ public class LoginUserTests {
 
         user.setPassword("pass");
 
-        ValidatableResponse responseToLogin = userClient.loginUser(userLogin.creds(user));
+        ValidatableResponse responseToLogin = userClient.loginUser(UserLogin.creds(user));
 
         assertEquals("Status code is wrong", SC_UNAUTHORIZED, responseToLogin.extract().statusCode());
         Boolean isLoginNotSuccessful = responseToLogin.extract().path("success");
