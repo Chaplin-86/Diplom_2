@@ -20,7 +20,6 @@ public class UpdateUserTests {
     private static final String BASE_URL = "https://stellarburgers.nomoreparties.site";
     private User user;
     private UserClient userClient;
-    private UserLogin userLogin;
     private String accessToken;
 
     @Before
@@ -41,7 +40,6 @@ public class UpdateUserTests {
     public void changeAuthUserEmail() {
         user = randomUser();
         userClient = new UserClient();
-        userLogin = new UserLogin();
 
         ValidatableResponse createUserResponse = userClient.createUser(user);
         accessToken = createUserResponse.extract().path("accessToken");

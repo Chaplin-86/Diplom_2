@@ -22,7 +22,6 @@ public class LoginUserTests {
     private static final String BASE_URL = "https://stellarburgers.nomoreparties.site";
     private User user;
     private UserClient userClient;
-    private UserLogin userLogin;
     private String accessToken;
     private String refreshToken;
 
@@ -45,7 +44,6 @@ public class LoginUserTests {
     public void realUserLogin() {
         user = randomUser();
         userClient = new UserClient();
-        userLogin = new UserLogin();
 
         userClient.createUser(user);
 
