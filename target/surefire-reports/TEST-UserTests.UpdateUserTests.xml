@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="UserTests.UpdateUserTests" time="6.267" tests="6" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Admin\Diplom\Diplom_2\target\test-classes;C:\Users\Admin\Diplom\Diplom_2\target\classes;C:\Users\Admin\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-junit4\2.21.0\allure-junit4-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-rest-assured\2.21.0\allure-rest-assured-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-attachments\2.21.0\allure-attachments-2.21.0.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Admin\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.0\surefire-shared-utils-3.3.0.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire11020140416275841889\surefirebooter9709008454360642320.jar C:\Users\Admin\AppData\Local\Temp\surefire11020140416275841889 2024-08-05T00-46-27_658-jvmRun1 surefire891059497587132692tmp surefire_08822199186611338624tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\Diplom\Diplom_2\target\test-classes;C:\Users\Admin\Diplom\Diplom_2\target\classes;C:\Users\Admin\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-junit4\2.21.0\allure-junit4-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-rest-assured\2.21.0\allure-rest-assured-2.21.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-attachments\2.21.0\allure-attachments-2.21.0.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Admin\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.0\surefire-shared-utils-3.3.0.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\Admin\Diplom\Diplom_2\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Admin\Diplom\Diplom_2"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire11020140416275841889\surefirebooter9709008454360642320.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+7-LTS"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.22.7.1"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="C:\Users\Admin\Diplom\Diplom_2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\apache-maven-3.9.6\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\GnuWin32\bin;C:\Program Files\gettext-iconv\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Admin\WebDriver\bin;C:\Program Files\allure-2.28.0\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Python312\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\bin;;C:\GnuWin32\bin;C:\Program Files\7-Zip\Lang;C:\Program Files\7-Zip;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.3\bin;;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.22+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="changeNotAuthUserEmail" classname="UserTests.UpdateUserTests" time="0.907">
+    <failure message="Status code is wrong expected:&lt;401&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserEmail(UpdateUserTests.java:133)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmYyOWVkMjgwMDAxYjQ4NGM5ZCIsImlhdCI6MTcyMjgwODA1MCwiZXhwIjoxNzIyODA5MjUwfQ.x8T84UwOau7Wo0BoSBKuRtfni2iOThXod41zw0mGsP4
+ETag: W/"171-DTlwxWux0byrWQmz2hNPEpIbEGE"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=N3IViBIPSxzs4xLKZaIK4eXvs6y99dkVFUMqTy8KjdbVqzSV9s0bVt5P9vGn0%2Fx2EStSd3HOV5EIBYEOLqm7Ak%2F5ofdzpV7iEBJlZmm3tvi7ApnlLiBRwx8%2F%2B7Rnfow012AXE4xuxng%2BIfxw6vw77iyiJi4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf091bd89906-ARN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "ijnur3r9xh@yandex.ru",
+        "name": "SMSnEZbO86"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmYyOWVkMjgwMDAxYjQ4NGM5ZCIsImlhdCI6MTcyMjgwODA1MCwiZXhwIjoxNzIyODA5MjUwfQ.x8T84UwOau7Wo0BoSBKuRtfni2iOThXod41zw0mGsP4",
+    "refreshToken": "190e42df9ec3f86edaf2e048b13d1c38fc7cc3eae96c90ea2a0bdd52d72f4dff2a9ac292da97da2d"
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=gJjbjRGKJmC2Wzl7e27BXv2TzeX4rfFDJHdZgiqsdokGUWF%2FGwyRtrbUwFn%2BYdUUS9J%2BAfeM6OIrgtgiRcDGQ6UD66aNsIH2%2FtF31MJxJIZCamgL8B0mNulXJqA5DL1wxnYWkClfINotXaAjhaTm2OLwJJ4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf0a897d0a1d-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=XzSlRwm723fW1nehi2dNSdervFo%2BWw9IWxcdQMbnsEWpZRa6P1QHtbCYrn%2B0M%2FfUUi5KodMiyfYi3GB2Zg4eHR5iW2bXeywBBbc0z27vuUY5qd%2FlO73xVhVAasfGlR8mN66wEHkjeE9kR7ZKv2RC%2FOx5PrA%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf0b98179d5b-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="changeAuthUserName" classname="UserTests.UpdateUserTests" time="1.304">
+    <failure message="Status code is wrong expected:&lt;200&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserName(UpdateUserTests.java:110)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:31 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmYzOWVkMjgwMDAxYjQ4NGM5ZiIsImlhdCI6MTcyMjgwODA1MSwiZXhwIjoxNzIyODA5MjUxfQ.rsbljk_pgS968hqJEtw2ttLc1qMAZDdYsVszIKSJno0
+ETag: W/"171-M8n093Zyc6H1Td4pWPXoy6CF6fU"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=4dWsg6H1VyzCYYwgKSUSTVwuDSrzG2kSNJ3kuRTIK14hkR9Hcl8MnrC5N78cSPCxPeMXcchkt7Y6pv7U0f5ZF37AgcjeCobJ7cTcBUOE%2BmorDz8VANiU96xv%2BWIn%2Bf5%2FDlr7dHPuNY4JOkNuKRaattiWIdc%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf0ebf067b63-DME
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "ugebngxkr9@yandex.ru",
+        "name": "ych9zAra1v"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmYzOWVkMjgwMDAxYjQ4NGM5ZiIsImlhdCI6MTcyMjgwODA1MSwiZXhwIjoxNzIyODA5MjUxfQ.rsbljk_pgS968hqJEtw2ttLc1qMAZDdYsVszIKSJno0",
+    "refreshToken": "c41a49fabacffe77170b2b2b43d923fc9870c782ce7845690035969aa7f473c9073836d398778b95"
+}
+HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:31 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"171-UBuRYVkgYO2GhJkVFWlCpt4V+Vo"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=SJrg7kL1h3BDdBMDYNavyGqbfp00fhll3W8VDmlKv0lxTUp2NTBLgaSwYpB3gCQnbMfooeH7PFzcPuNNo1wHuro1cK6ei%2F2XBG%2FDT1c9nRt%2B72B%2B22%2Bwzwrmu6jHjs1DCkHbFJ4pLeHkOTvXt48JCHGEDN8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf10cec67b47-DME
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmYzOWVkMjgwMDAxYjQ4NGM5ZiIsImlhdCI6MTcyMjgwODA1MSwiZXhwIjoxNzIyODA5MjUxfQ.rsbljk_pgS968hqJEtw2ttLc1qMAZDdYsVszIKSJno0",
+    "refreshToken": "6b872e37f4e46aa206cc777ce65debc668d0a1de8c3d79f625525edb98d842bbaa5dae462a817a82",
+    "user": {
+        "email": "ugebngxkr9@yandex.ru",
+        "name": "ych9zAra1v"
+    }
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:31 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0ikHlfzVayA%2Fu2d06y4e4JiGjjNDFUDFKmxhg6I7pPXUTcMdIOoLQUJx3%2B5tq71%2BBT57THag%2BCbj9NkbyGc%2B7SLkwOUDx0hggtwqj%2Bo%2F1dzReBc1IrtUCc4ZZmvtFiW28fEdM9mPRnNWDjVVas15WXdmRs4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf12edbe8f57-CPH
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qaJPQKMAEPlNRhV2FM55PLnJKv8orxgaAzi9PmAmfn87Aw1DoeFeFXpzYXzrjyOiq77sVnB4ZjcC9myb5CGY5eP7Q8mM6ccKhgbDWec93LuxSLy59Jlw0NxGtIEn%2B2QFNj1YU7yhsmAfsexzjpg8nMfBaMg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf13bea80a41-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="changeAuthUserPassword" classname="UserTests.UpdateUserTests" time="1.115">
+    <failure message="Status code is wrong expected:&lt;200&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserPassword(UpdateUserTests.java:85)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY0OWVkMjgwMDAxYjQ4NGNhMiIsImlhdCI6MTcyMjgwODA1MiwiZXhwIjoxNzIyODA5MjUyfQ._De0vZvAK4JqhTfv1rIKNfBu8guvZENTnJG1d3yzGMI
+ETag: W/"171-8IkE/Chp3cCnaps3WUvsZigobtY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=zOzt%2FO7J5Gyn%2BwCOTMNc1qFT0ue8wzu6oSnDZMXtqoQjr4ktp30nZhOv0QLDmCzC1mTOWIiauECSyoDbzaYTUxpDZ1BEm6c%2FiIwZc1fwGK5a003I3Me8Y%2FSs3%2BAWRWPrAHXc2ivti5CJTlP%2FFrawyDzDURs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf16fc181d06-CPH
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "f3mqrforct@yandex.ru",
+        "name": "3VSjOaKaO8"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY0OWVkMjgwMDAxYjQ4NGNhMiIsImlhdCI6MTcyMjgwODA1MiwiZXhwIjoxNzIyODA5MjUyfQ._De0vZvAK4JqhTfv1rIKNfBu8guvZENTnJG1d3yzGMI",
+    "refreshToken": "ab18d778f480551568de57cc168c9156fe3368feecf5afa8905ba580998e890ac369781fce3d1c9c"
+}
+HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"171-4FkNKZElVzTPA2XV2/JPQoZ/ByE"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=jXZ3nH1ksda2m2d2E71qphym9S7Bic3gjNqKoCASf0a6RqA3Ir2K7FulGVH8gO%2FsvLL3jDdpTfapCLKYT0hKdFdEOeDvKwUywnvXFlm1ORZK7HcWQsruYYmlVlRI%2BhnfRdDm3tGOZecfhkYzSwc9YucUXkQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf189d342d62-ARN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY0OWVkMjgwMDAxYjQ4NGNhMiIsImlhdCI6MTcyMjgwODA1MiwiZXhwIjoxNzIyODA5MjUyfQ._De0vZvAK4JqhTfv1rIKNfBu8guvZENTnJG1d3yzGMI",
+    "refreshToken": "9b1e1d2a2f28941e2cb8fbd530c87bd3410838460b2618bd0527a64880c29266e771cfa629604b29",
+    "user": {
+        "email": "f3mqrforct@yandex.ru",
+        "name": "3VSjOaKaO8"
+    }
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Gyhu%2FPrdhbT512EFvynBTydmAtj3Sue5gBcJjF2ha5zyFunHE9%2FmFTHc%2FpbwBzEY0K7G%2BSAh6WMGERt7ssjSua%2FLmMLVodAXnWJhJaPdlBvmYP9W0xAt3U4NVg%2FSFVmBIgoKWfiFfFJbpnzUjk67ylvi8KU%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf1a083b5f01-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=XcJIE0idrqCuyaEu5xMgsuj%2BIFtncGJJgEWJ5U2xOncSyJ4FolG8Igk4VvoQ0R8SkEH3%2BxAYAFm4A75udHvsfl1DoULTJ4vLN2mcbxW6kJnZwqB29TIGxllpQQadkqWWesF6IE52tzPvZ%2B0UJDtIswYK73c%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf1b1ddd92d9-CPH
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="changeNotAuthUserPassword" classname="UserTests.UpdateUserTests" time="0.917">
+    <failure message="Status code is wrong expected:&lt;401&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserPassword(UpdateUserTests.java:156)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY1OWVkMjgwMDAxYjQ4NGNhNSIsImlhdCI6MTcyMjgwODA1MywiZXhwIjoxNzIyODA5MjUzfQ.ntFkWJBbRa4BsK9T423J6pa_z84MKnNKNgnVjdMQPis
+ETag: W/"171-3QVjjmbSFlrvaaUosdbv7VwXjcc"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=O2t41kaVobqYJM5YvE9WnRheJMrNIBum%2BXW5tg4qyXMf%2BuutsL6dVbWfqZB6NsHaWDeTN1Dmtqz5RvdOEojeZoS3KEk2mrX%2BAH7aFfoaeyMHZYMZe9hvB9nqvayO2fZppgDK2UsVnrEDzVnkQsE%2Fi%2BSsl6c%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf1dee51829d-ARN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "oapnj5kozu@yandex.ru",
+        "name": "2eGz42t1qY"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY1OWVkMjgwMDAxYjQ4NGNhNSIsImlhdCI6MTcyMjgwODA1MywiZXhwIjoxNzIyODA5MjUzfQ.ntFkWJBbRa4BsK9T423J6pa_z84MKnNKNgnVjdMQPis",
+    "refreshToken": "bf74155962f0ed1f0ba3b157cdc8bf9fa3056b7a56737389dcf7bdf48c7506326b197807bcebbf4b"
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HP%2FGP91ckVnyOJCmZjHvyDZ8L2cBytcI9YYYpFu44A2fcbAJlPZrzFwDgf6YP1fjNjhgXn5gNfPG8H%2BAuls%2FqryqJCb8QLtlJZNugttuX47uqPpf%2BpKYfW5GPH9iP4WFeT%2BkIa6zawp2xNwM3bPWTzTQ04k%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf1f5efb9d45-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=2%2BN3uJ%2BtZ8Ziu9Y5C%2FIBL9shwlW3wNxo95fN3N5oQjOb2vp6EkuA%2BoqW0FDWb5aPsJ1BYS23pYu2pwNdfX4EBnoTfovlh51pRxsaui5rZ46IHIoTkK0lrsJfhvgmg%2BOJieauEW2cwG4Z%2FvW0gN2Z2Kh9sxI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf20cde21d16-CPH
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="changeNotAuthUserName" classname="UserTests.UpdateUserTests" time="0.939">
+    <failure message="Status code is wrong expected:&lt;401&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserName(UpdateUserTests.java:179)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:34 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY2OWVkMjgwMDAxYjQ4NGNhNyIsImlhdCI6MTcyMjgwODA1NCwiZXhwIjoxNzIyODA5MjU0fQ.vIP1NtVbCHSOLOIMynZw_BMJ9GDp6FDta-sMIdEm98g
+ETag: W/"171-xnZcPv0bE4CePNnWtfaEpXXqsI4"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=SZr8PwZyQBWQ2vTH2EwgBv8u5k%2BCDUWYZb5w2p46ZfTMim529aRgUR0dxiZgBwOiw4sJdJ2v8U1b4HWcNkk0JsQl4jUGiHvohCsBNQmGCUvlTxXqtyfThhx%2FLDFtC3ei19yfTJi4gMn9Mcir75kn5MK65fw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf23ad63759f-DME
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "mqoorbfemh@yandex.ru",
+        "name": "M35EBp01Wh"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY2OWVkMjgwMDAxYjQ4NGNhNyIsImlhdCI6MTcyMjgwODA1NCwiZXhwIjoxNzIyODA5MjU0fQ.vIP1NtVbCHSOLOIMynZw_BMJ9GDp6FDta-sMIdEm98g",
+    "refreshToken": "680b4f348808cc87b36c98ed135d517e86d19fa47b57da4c25b07352014b3939382f45d03564e50b"
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bfrSwB%2BvAzGVM80SzWGXibEo9nqLoVBWPF2omSStgQegPEQEQIKh649gyfnVAKy1D2fX%2BnTNds%2FDZB5y%2BCEPkYeJrdeNRrYZSKPm1%2Bts7WWsdHVdbNtYjxtjkf70F4jxDnfM%2BHBoK7A3WLBn3AkNwtwU5tM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf25dcae2d59-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=UiSOW0YjxmvorjCpJwbl3qAEJpJyVfDV4d3w6vXBZTZL6rYQd0F%2F%2FoqmwbETIUcKKc82PxmVj6Y7%2FYM7eu%2BoSm7Ai4i4U4QAWC%2FjsvStlA8PcFz%2FkJ7FtNg2MCJXVSBiRDo9Y9n%2FI6jnmh7%2FfH6Y8wOf6Bk%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf26a90b2d92-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="changeAuthUserEmail" classname="UserTests.UpdateUserTests" time="1.083">
+    <failure message="Status code is wrong expected:&lt;200&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserEmail(UpdateUserTests.java:60)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY3OWVkMjgwMDAxYjQ4NGNhOSIsImlhdCI6MTcyMjgwODA1NSwiZXhwIjoxNzIyODA5MjU1fQ.7LZZ7Er8Fec21r2KWso5Ti0oj3EdEU_oBWwZtmdgFw4
+ETag: W/"171-54JkZq5slzfCTb/v8AslZ/F6wY8"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NwVDOvXyhMJ%2BtGVcJgl46KV%2BI3%2BE2By5n1eqo8Xor1QVsfPJXV5AmSMqzcT9X6FflqrIjPybRDsQdpO11CbbbDSSbQ0wwXVu4Hpbpj6VbK2M%2Fbw87qolCkAPpx9%2FVSRHNvrfq0epoD1RHmwSvPZ%2FNtyZpJw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf298ee67b57-DME
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "6irdomdyeq@yandex.ru",
+        "name": "a3sn4eq7v4"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY3OWVkMjgwMDAxYjQ4NGNhOSIsImlhdCI6MTcyMjgwODA1NSwiZXhwIjoxNzIyODA5MjU1fQ.7LZZ7Er8Fec21r2KWso5Ti0oj3EdEU_oBWwZtmdgFw4",
+    "refreshToken": "1f5229e14cd88d453e58499003158335a56b46973663312b7f08b8f31b8fee068331ee492026f99d"
+}
+HTTP/1.1 200 OK
+Date: Sun, 04 Aug 2024 21:47:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"171-+xuOXgqewzXmN4C8EjjAdO5BiMM"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=pCvpuTvB7%2Fdz%2Ff9TplmJSZTk4pOmEpMS2iQruUcI3cNMwISu9FJS0rgT2pBXaAblI1EGo%2FAMC0reA6aDdpXeznuDSEw0cn1npyg%2FawgJTllT%2BJcX3SC86FeFxb3ritqQtPIaa4mWGwAxCHLhKCls2T6FYbQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf2aff2f75bb-DME
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YWZmNmY3OWVkMjgwMDAxYjQ4NGNhOSIsImlhdCI6MTcyMjgwODA1NSwiZXhwIjoxNzIyODA5MjU1fQ.7LZZ7Er8Fec21r2KWso5Ti0oj3EdEU_oBWwZtmdgFw4",
+    "refreshToken": "91c5b839c955651008dbf1009870bde4067da0c232a02868915e8b551238a9836324e8deebd485a6",
+    "user": {
+        "email": "6irdomdyeq@yandex.ru",
+        "name": "a3sn4eq7v4"
+    }
+}
+HTTP/1.1 403 Forbidden
+Date: Sun, 04 Aug 2024 21:47:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2b-GUFP7oy+YVFqK6yYnchJLDGbm7o"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xfzIOQ61lDSG53tWsJc8TxmXT3RmSgYbXFW10roksGwWP0CCHN5SxAK%2FTyljdywXb%2BcbEHlqASQWoGWDkuwMMu5p2U1O5jLH%2BMh7b5fvk5wAyJ22BvIBpUa7%2FjEo3DxR73ft3cYm81FQZhWXiaFp4tMoCEg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf2c781b2e03-ARN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "jwt malformed"
+}
+HTTP/1.1 202 Accepted
+Date: Sun, 04 Aug 2024 21:47:36 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tt%2BIcbsBgxzda9%2Bpy2tdWGP5VTOnMQpufOFx0T%2FG0yxo4%2B%2BCx31h3PpM%2BI6wXeIEJ1gSz%2BhHvgyo254MxHsaSXCFIJSk1VGOvHUfGWkbQQw1fkzECFvbMJbZNMXGewmLq73CSTcuYADka1xLQG2egFIjM8g%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae1bf2d4e9b7593-DME
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

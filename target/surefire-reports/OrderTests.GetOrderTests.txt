@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: OrderTests.GetOrderTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.997 s <<< FAILURE! - in OrderTests.GetOrderTests
+GetAuthUserOrdersTest(OrderTests.GetOrderTests)  Time elapsed: 0.935 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <403>
+	at OrderTests.GetOrderTests.GetAuthUserOrdersTest(GetOrderTests.java:57)
+

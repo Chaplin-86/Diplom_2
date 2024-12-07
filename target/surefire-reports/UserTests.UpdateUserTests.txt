@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: UserTests.UpdateUserTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 6.267 s <<< FAILURE! - in UserTests.UpdateUserTests
+changeNotAuthUserEmail(UserTests.UpdateUserTests)  Time elapsed: 0.907 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserEmail(UpdateUserTests.java:133)
+
+changeAuthUserName(UserTests.UpdateUserTests)  Time elapsed: 1.304 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserName(UpdateUserTests.java:110)
+
+changeAuthUserPassword(UserTests.UpdateUserTests)  Time elapsed: 1.115 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserPassword(UpdateUserTests.java:85)
+
+changeNotAuthUserPassword(UserTests.UpdateUserTests)  Time elapsed: 0.917 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserPassword(UpdateUserTests.java:156)
+
+changeNotAuthUserName(UserTests.UpdateUserTests)  Time elapsed: 0.939 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<401> but was:<403>
+	at UserTests.UpdateUserTests.changeNotAuthUserName(UpdateUserTests.java:179)
+
+changeAuthUserEmail(UserTests.UpdateUserTests)  Time elapsed: 1.083 s  <<< FAILURE!
+java.lang.AssertionError: Status code is wrong expected:<200> but was:<403>
+	at UserTests.UpdateUserTests.changeAuthUserEmail(UpdateUserTests.java:60)
+
